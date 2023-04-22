@@ -68,8 +68,8 @@ function getweatherDetails(url) {
         tztitle.innerText = `Timezone: ${weatherobj.timezone} UTC / ${new Date().toLocaleTimeString()}`;
         wstitle.innerText = `Wind Speed: ${weatherobj.wind.speed} m/s`;
         prtitle.innerText = `Pressure: ${weatherobj.main.pressure} hPa`;
-        humtitle.innerText = `Humidity: ${weatherobj.main.humidity} %`;
-        wdtitle.innerText = `Wind Direction: ${weatherobj.wind.deg} °`;
+        humtitle.innerText = `Humidity: ${weatherobj.main.humidity}%`;
+        wdtitle.innerText = `Wind Direction: ${weatherobj.wind.deg}°`;
         uvititle.innerText = `UV Index: NA`;
         fltitle.innerText = `Feels Like: ${weatherobj.main.feels_like} Kelvin / ${Math.round(weatherobj.main.feels_like - 273.15)} °C`;
     })
